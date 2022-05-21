@@ -1,0 +1,270 @@
+/*Geral*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0AFF99;
+}
+
+a {
+    color: #BE0AFF;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    background-color: #FF8700;
+    height: 2px;
+    width: 20%;
+    margin: 20px auto;
+}
+
+p {
+    line-height: 22px;
+    padding: 0 10px;
+}
+
+.section_titulo {
+    font-weight: lighter;
+    color: #BE0AFF;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*Sessão1*/
+.menu_dg {
+    background-color: #0AEFFF;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu_logo {
+    margin: 10px;
+}
+
+/*Lista*/
+.nav_lista {
+    flex-wrap: wrap;
+}
+
+.nav_link {
+    padding: 20px 10px;
+}
+
+/*Introdução*/
+.intro {
+    color: #FF8700;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+/*sobre mim */
+.sobre {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sobre-c_texto {
+    flex: 6 1 160px;
+}
+
+.sobre-c_img {
+    flex: 1 1 360px;
+}
+
+/*trabalhos*/
+.Curso {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.curso-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Curso {
+    width: 280px;
+    margin: 20px;
+}
+
+.curso_titulo {
+    font-weight: 350;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0 5 px 0;
+}
+
+/*experiencias*/
+.experiencia {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exp {
+    max-width: 240px;
+    margin: 10px;
+}
+
+.exp_titulo {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.exp_titulo::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.exp:nth-last-of-type(3n+1) .exp_titulo::before {
+    background: #BE0AFF;
+}
+
+.exp:nth-last-of-type(3n+2) .exp_titulo::before {
+    background: #BE0AFF;
+}
+
+.exp:nth-last-of-type(3n+3) .exp_titulo::before {
+    background: #BE0AFF;
+}
+
+@media (max-width: 800px) {
+    .exp {
+        max-width: 200px;
+    }
+}
+
+/*contatos*/
+.contate-me {
+    background: #FF8700;
+    color: white;
+}
+
+.contato-c {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contato-info {
+    flex: 1 1 260px;
+    padding-left: 20px;
+    margin: 50px;
+
+}
+
+.contato-info_titulo {
+    font-size: 2.62rem;
+    font-weight: bold;
+
+}
+
+.contato-info_descricao {
+    font-style: italic;
+}
+
+.contato-form {
+    flex: 2 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contato-form_input {
+    flex: 3 1 260px;
+    font-size: 1.25rem;
+    width: 325px;
+    color: antiquewhite;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    border: 10px solid royalblue;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.contato-form_submit {
+    flex: 1 1 260px;
+    width: 192px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: violet;
+    color: brown;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+
+
+}
+.contato-form_submit:hover {
+    color: black;
+}
+/*rodapé*/
+.contatos{
+    background-color: black;
+    padding: 55px calc((100% - 960px) / 2);
+}
+.contatos-c{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.contatos-info_redesocial{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.contatos-info_subtitulo{
+    margin-right: 5px;
+    margin-top: 30px;
+}
+.contatos-info_redesocial:hover{
+    color: white;
+}
+.contatos-info{
+    color: white;
+    padding: 20px 10px;
+}
+.contatos-info_img{
+    margin: 10px;
+}
